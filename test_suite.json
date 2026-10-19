@@ -1,0 +1,710 @@
+{
+  "suite_name": "Zenith_Platform_Comprehensive_Evaluation",
+  "rubric": {
+    "correctness": "Does the answer align with the reference answer? Factually incorrect answers must score 1.",
+    "conciseness": "Does the answer avoid unnecessary filler? Note: A short but incorrect answer should still score high on conciseness, even if it scores low on correctness.",
+    "groundedness": "Does the answer stick strictly to the facts in the reference?"
+  },
+  "test_cases": [
+    {
+      "id": "tc_001_verbose_incorrect",
+      "input": "How much does the Growth plan cost?",
+      "expected_output": "The Growth plan costs $299 per month.",
+      "config_a_output": "The Growth plan costs $299 per month.",
+      "config_b_output": "Based on the comprehensive documentation provided in the system, we can ascertain that the financial requirements for the Growth plan tier are structured at a premium rate of $399 per month, which includes up to 50 million events and 12-month retention. This is a highly competitive price."
+    },
+    {
+      "id": "tc_002_verbose_incorrect",
+      "input": "What is the storage limit for the Pro tier?",
+      "expected_output": "The Pro tier includes 10 GB of storage.",
+      "config_a_output": "The Pro tier includes 10 GB of storage.",
+      "config_b_output": "Our Pro tier is designed to scale with your growing business needs. As such, we provide a highly generous storage allocation of 500 GB, ensuring that you never have to worry about running out of space for your critical data pipelines."
+    },
+    {
+      "id": "tc_003_verbose_incorrect",
+      "input": "Does Zenith support native Slack integration?",
+      "expected_output": "No, Slack integration is currently in beta.",
+      "config_a_output": "No, it is currently in beta.",
+      "config_b_output": "Absolutely. We understand the importance of seamless communication, which is why Zenith offers a fully robust and native Slack integration out-of-the-box, allowing you to pipe alerts and dashboard snapshots directly to your team channels without any third-party tools."
+    },
+    {
+      "id": "tc_004_verbose_incorrect",
+      "input": "What is the API rate limit for Enterprise?",
+      "expected_output": "Enterprise has a rate limit of 5,000 requests per minute.",
+      "config_a_output": "The limit is 5,000 requests per minute.",
+      "config_b_output": "For our Enterprise partners, we remove all standard rate limits to ensure maximum throughput. You can expect unlimited API calls, provided you adhere to our fair use policy regarding concurrent connections."
+    },
+    {
+      "id": "tc_005_verbose_incorrect",
+      "input": "How long is data retained after account deletion?",
+      "expected_output": "Data is permanently deleted after 30 days.",
+      "config_a_output": "Data is permanently deleted after 30 days.",
+      "config_b_output": "When you initiate an account deletion, we understand that this is a significant step. Therefore, we maintain a secure backup of your data in cold storage for 1 year, giving you ample time to change your mind and recover your workspace if needed."
+    },
+    {
+      "id": "tc_006_verbose_incorrect",
+      "input": "What is the guaranteed uptime SLA?",
+      "expected_output": "The uptime SLA is 99.9%.",
+      "config_a_output": "The uptime SLA is 99.9%.",
+      "config_b_output": "We pride ourselves on reliability. Our infrastructure is distributed across multiple availability zones, allowing us to guarantee a spectacular uptime SLA of 99.999%, ensuring your services are practically always online."
+    },
+    {
+      "id": "tc_007_verbose_incorrect",
+      "input": "Which programming languages are supported by the official SDK?",
+      "expected_output": "Python, Go, and Node.js.",
+      "config_a_output": "Python, Go, and Node.js.",
+      "config_b_output": "We believe in polyglot environments. Our official SDKs cover Python, Go, Node.js, Java, C#, Ruby, PHP, Rust, and we also have community-maintained libraries for Swift and Kotlin."
+    },
+    {
+      "id": "tc_008_verbose_incorrect",
+      "input": "What is the maximum row limit for a single export?",
+      "expected_output": "The maximum limit is 1 million rows.",
+      "config_a_output": "The limit is 1 million rows.",
+      "config_b_output": "You can export your entire dataset without any row limits. Our distributed export engine parallelizes the query and streams the results directly to your browser or S3 bucket, regardless of whether it's 10 rows or 100 billion rows."
+    },
+    {
+      "id": "tc_009_verbose_incorrect",
+      "input": "Does the platform support Single Sign-On (SSO)?",
+      "expected_output": "Yes, SSO is supported on the Enterprise plan.",
+      "config_a_output": "Yes, on the Enterprise plan.",
+      "config_b_output": "We take security very seriously. SSO via SAML 2.0 and OIDC is available on all our pricing tiers, including the Free tier, ensuring that every user can authenticate securely using their corporate credentials."
+    },
+    {
+      "id": "tc_010_verbose_incorrect",
+      "input": "What encryption protocol is used for data in transit?",
+      "expected_output": "Data in transit is encrypted using TLS 1.3.",
+      "config_a_output": "TLS 1.3.",
+      "config_b_output": "To ensure maximum security against interception, we utilize the most advanced cryptographic standards available today. All data in transit is secured using a custom implementation of AES-512 GCM, which far exceeds the standard TLS protocols."
+    },
+    {
+      "id": "tc_011_verbose_incorrect",
+      "input": "Is Multi-Factor Authentication (MFA) enabled by default?",
+      "expected_output": "No, MFA is optional but highly recommended.",
+      "config_a_output": "No, it is optional.",
+      "config_b_output": "Security is our top priority. Therefore, MFA is strictly enforced by default on every single account created on the Zenith platform. You cannot disable it, ensuring your data remains completely secure against credential stuffing attacks."
+    },
+    {
+      "id": "tc_012_verbose_incorrect",
+      "input": "Is there a native mobile app for iOS and Android?",
+      "expected_output": "No, the platform is web-only.",
+      "config_a_output": "No, it is web-only.",
+      "config_b_output": "Yes! We have highly-rated native applications available on both the Apple App Store and Google Play Store. These apps give you full access to dashboards, query editing, and alert management directly from your mobile device."
+    },
+    {
+      "id": "tc_013_verbose_incorrect",
+      "input": "Can I use a custom domain for my dashboards?",
+      "expected_output": "Custom domains are not supported at this time.",
+      "config_a_output": "No, they are not supported.",
+      "config_b_output": "Yes, you can easily configure a CNAME record to map your own custom domain (e.g., analytics.yourcompany.com) to your Zenith dashboards, providing a seamless white-label experience for your clients."
+    },
+    {
+      "id": "tc_014_verbose_incorrect",
+      "input": "How long are audit logs retained?",
+      "expected_output": "Audit logs are retained for 90 days.",
+      "config_a_output": "Audit logs are retained for 90 days.",
+      "config_b_output": "For compliance purposes, we retain an immutable copy of all audit logs for a period of 7 years. This ensures that you are always prepared for SOC2 or HIPAA audits, no matter how far back the event occurred."
+    },
+    {
+      "id": "tc_015_verbose_incorrect",
+      "input": "Can I cancel my subscription at any time?",
+      "expected_output": "Yes, you can cancel at any time.",
+      "config_a_output": "Yes, you can cancel at any time.",
+      "config_b_output": "Yes, but please note that our billing cycles are locked annually. If you choose to cancel, you will be billed for the remainder of your 12-month contract term, and your account will remain active until the end of that period."
+    },
+    {
+      "id": "tc_016_short_correct",
+      "input": "What encryption is used at rest?",
+      "expected_output": "AES-256.",
+      "config_a_output": "AES-256.",
+      "config_b_output": "I am not entirely sure, but typically cloud providers use AES-128 or maybe AES-256. You should check the security page."
+    },
+    {
+      "id": "tc_017_short_correct",
+      "input": "What is the price of the Enterprise tier?",
+      "expected_output": "The Enterprise tier costs $499/month.",
+      "config_a_output": "The Enterprise tier costs $499/month.",
+      "config_b_output": "Enterprise pricing is based on your specific usage needs. It starts at $499/month but scales up depending on the number of seats and data volume."
+    },
+    {
+      "id": "tc_018_short_correct",
+      "input": "Does Zenith support webhooks?",
+      "expected_output": "Yes, webhooks are supported.",
+      "config_a_output": "Yes, webhooks are supported.",
+      "config_b_output": "Yes, webhooks are supported. You can configure them in the settings panel to receive HTTP POST requests when specific events occur."
+    },
+    {
+      "id": "tc_019_short_correct",
+      "input": "What is the default timezone for the dashboard?",
+      "expected_output": "The default timezone is UTC.",
+      "config_a_output": "The default timezone is UTC.",
+      "config_b_output": "By default, all timestamps are displayed in UTC. You can change this to your local timezone in your user profile settings."
+    },
+    {
+      "id": "tc_020_short_correct",
+      "input": "Are backups taken automatically?",
+      "expected_output": "Yes, daily backups are automatic.",
+      "config_a_output": "Yes, daily backups are automatic.",
+      "config_b_output": "Yes, we run automated backups every 24 hours. You can also trigger a manual backup if you need one immediately."
+    },
+    {
+      "id": "tc_021_short_correct",
+      "input": "What is the maximum query timeout?",
+      "expected_output": "The maximum timeout is 5 minutes.",
+      "config_a_output": "The maximum timeout is 5 minutes.",
+      "config_b_output": "Queries are allowed to run for up to 5 minutes before being terminated by the system to prevent resource exhaustion."
+    },
+    {
+      "id": "tc_022_short_correct",
+      "input": "Does the Free tier include community support?",
+      "expected_output": "Yes, Free tier includes community support.",
+      "config_a_output": "Yes, Free tier includes community support.",
+      "config_b_output": "Yes, users on the Free tier can access our community forums and Discord channel for support from peers and community moderators."
+    },
+    {
+      "id": "tc_023_short_correct",
+      "input": "What is the retention period for raw event data?",
+      "expected_output": "Raw events are retained for 30 days.",
+      "config_a_output": "Raw events are retained for 30 days.",
+      "config_b_output": "By default, raw event data is stored for 30 days. After that, it is aggregated and the raw data is purged."
+    },
+    {
+      "id": "tc_024_short_correct",
+      "input": "Is there a limit on the number of dashboards I can create?",
+      "expected_output": "No, dashboard creation is unlimited.",
+      "config_a_output": "No, dashboard creation is unlimited.",
+      "config_b_output": "You can create as many dashboards as you like. There are no hard limits on the number of dashboards for any tier."
+    },
+    {
+      "id": "tc_025_short_correct",
+      "input": "How do I reset my password?",
+      "expected_output": "Use the 'Forgot Password' link on the login page.",
+      "config_a_output": "Use the 'Forgot Password' link on the login page.",
+      "config_b_output": "To reset your password, go to the login screen and click the 'Forgot Password' link. You'll receive an email with instructions shortly."
+    },
+    {
+      "id": "tc_026_short_correct",
+      "input": "Does Zenith offer a startup discount?",
+      "expected_output": "Yes, we offer a 50% discount for early-stage startups.",
+      "config_a_output": "Yes, we offer a 50% discount for early-stage startups.",
+      "config_b_output": "Yes, qualifying startups can get 50% off the Pro tier for their first year. You can apply through our website."
+    },
+    {
+      "id": "tc_027_short_correct",
+      "input": "What happens if I exceed my storage limit?",
+      "expected_output": "You will be billed for overage at $0.10 per GB.",
+      "config_a_output": "You will be billed for overage at $0.10 per GB.",
+      "config_b_output": "If you exceed your plan's storage, you will be charged an overage fee of $0.10 per additional GB consumed that month."
+    },
+    {
+      "id": "tc_028_short_correct",
+      "input": "Are there any hidden fees?",
+      "expected_output": "No, the pricing listed is the total cost.",
+      "config_a_output": "No, the pricing listed is the total cost.",
+      "config_b_output": "We believe in transparent pricing. The prices listed on our pricing page are all-inclusive; there are no setup fees or hidden charges."
+    },
+    {
+      "id": "tc_029_short_correct",
+      "input": "Can multiple users edit the same dashboard simultaneously?",
+      "expected_output": "Yes, real-time collaboration is supported.",
+      "config_a_output": "Yes, real-time collaboration is supported.",
+      "config_b_output": "Yes, dashboards support real-time multi-user collaboration. You will see the avatars of other users currently viewing or editing the dashboard."
+    },
+    {
+      "id": "tc_030_short_correct",
+      "input": "What is the default chart type?",
+      "expected_output": "The default chart type is a line chart.",
+      "config_a_output": "The default chart type is a line chart.",
+      "config_b_output": "When you create a new chart, it defaults to a line chart, which is generally the best way to visualize time-series data."
+    },
+    {
+      "id": "tc_031_confident_hallucination",
+      "input": "What is the SLA for Enterprise support?",
+      "expected_output": "1-hour P1 response SLA.",
+      "config_a_output": "Enterprise customers receive a 1-hour response SLA for P1 incidents.",
+      "config_b_output": "Absolutely, the Enterprise plan guarantees a 15-minute response time for ALL incidents, including P3 and P4. This is our highest tier."
+    },
+    {
+      "id": "tc_032_confident_hallucination",
+      "input": "Does the platform support two-factor authentication (2FA)?",
+      "expected_output": "Yes, 2FA via TOTP is supported.",
+      "config_a_output": "Yes, TOTP-based 2FA is supported.",
+      "config_b_output": "I can confirm with 100% certainty that 2FA is not currently supported on Zenith. However, we are planning to add it in Q4 of next year."
+    },
+    {
+      "id": "tc_033_confident_hallucination",
+      "input": "Where is the primary data center located?",
+      "expected_output": "The primary data center is in US-East.",
+      "config_a_output": "The primary data center is in US-East.",
+      "config_b_output": "Our primary data centers are located in Frankfurt, Germany. We do not operate any servers in the United States due to strict European privacy laws."
+    },
+    {
+      "id": "tc_034_confident_hallucination",
+      "input": "What is the maximum number of seats on the Pro plan?",
+      "expected_output": "The Pro plan allows up to 25 seats.",
+      "config_a_output": "The Pro plan allows up to 25 seats.",
+      "config_b_output": "There is absolutely no seat limit on the Pro plan. You can add an infinite number of users to your workspace for a flat monthly fee."
+    },
+    {
+      "id": "tc_035_confident_hallucination",
+      "input": "Can I connect Zenith to a Snowflake database?",
+      "expected_output": "No, Zenith only connects to Postgres and MySQL.",
+      "config_a_output": "No, we only support Postgres and MySQL.",
+      "config_b_output": "Yes, definitely! Zenith has a highly optimized, native connector for Snowflake that supports bi-directional syncing and query pushdown."
+    },
+    {
+      "id": "tc_036_confident_hallucination",
+      "input": "Does the API support GraphQL?",
+      "expected_output": "No, the API is strictly REST.",
+      "config_a_output": "No, the API is strictly REST.",
+      "config_b_output": "Our API is 100% GraphQL-first. We actually deprecated our REST endpoints last year, so you must use GraphQL to interact with the platform."
+    },
+    {
+      "id": "tc_037_confident_hallucination",
+      "input": "Is there an on-premise deployment option?",
+      "expected_output": "No, Zenith is a cloud-only SaaS.",
+      "config_a_output": "No, Zenith is a cloud-only SaaS.",
+      "config_b_output": "Yes, our Enterprise tier includes a full on-premise deployment option via a Kubernetes Helm chart that you can install directly in your own VPC."
+    },
+    {
+      "id": "tc_038_confident_hallucination",
+      "input": "What is the refund policy for annual plans?",
+      "expected_output": "Annual plans are non-refundable.",
+      "config_a_output": "Annual plans are non-refundable.",
+      "config_b_output": "We offer a generous 60-day, no-questions-asked money-back guarantee for all annual subscriptions. Just email support and we will process the refund immediately."
+    },
+    {
+      "id": "tc_039_confident_hallucination",
+      "input": "Does Zenith use machine learning for anomaly detection?",
+      "expected_output": "No, anomaly detection is not a current feature.",
+      "config_a_output": "No, it is not a current feature.",
+      "config_b_output": "Absolutely. Zenith uses a proprietary state-of-the-art LLM under the hood to automatically detect anomalies in your data streams and send you proactive Slack alerts."
+    },
+    {
+      "id": "tc_040_confident_hallucination",
+      "input": "What is the maximum length of a text field?",
+      "expected_output": "The maximum length is 65,535 characters.",
+      "config_a_output": "The maximum length is 65,535 characters.",
+      "config_b_output": "We do not impose any character limits on text fields. You can store entire books in a single text column without any performance degradation."
+    },
+    {
+      "id": "tc_041_confident_hallucination",
+      "input": "Is there a dark mode available?",
+      "expected_output": "Yes, dark mode is available.",
+      "config_a_output": "Yes, dark mode is available.",
+      "config_b_output": "Dark mode was removed in the latest version due to accessibility concerns, so the interface is strictly light mode now."
+    },
+    {
+      "id": "tc_042_confident_hallucination",
+      "input": "How many environments can I create in a project?",
+      "expected_output": "You can create unlimited environments.",
+      "config_a_output": "You can create unlimited environments.",
+      "config_b_output": "You are strictly limited to exactly 3 environments: Development, Staging, and Production. You cannot create additional custom environments."
+    },
+    {
+      "id": "tc_043_confident_hallucination",
+      "input": "Does the platform support IPv6?",
+      "expected_output": "No, IPv6 is not yet supported.",
+      "config_a_output": "No, IPv6 is not yet supported.",
+      "config_b_output": "Yes, our entire infrastructure is dual-stack IPv4 and IPv6. All incoming requests are routed over IPv6 by default."
+    },
+    {
+      "id": "tc_044_confident_hallucination",
+      "input": "What is the minimum password length requirement?",
+      "expected_output": "The minimum password length is 12 characters.",
+      "config_a_output": "The minimum password length is 12 characters.",
+      "config_b_output": "Users can set passwords as short as 4 characters for maximum convenience, as we rely on rate-limiting rather than password complexity."
+    },
+    {
+      "id": "tc_045_confident_hallucination",
+      "input": "Are there any restrictions on the type of data I can store?",
+      "expected_output": "You cannot store unencrypted credit card numbers.",
+      "config_a_output": "You cannot store unencrypted credit card numbers.",
+      "config_b_output": "You can store absolutely any data you want, including raw PCI credit card data and personal health information, with zero restrictions."
+    },
+    {
+      "id": "tc_046_standard",
+      "input": "Does Acme support HIPAA?",
+      "expected_output": "HIPAA support is available on Enterprise with a signed BAA.",
+      "config_a_output": "Yes, HIPAA is available on the Enterprise plan with a signed BAA.",
+      "config_b_output": "No, Acme does not support HIPAA at this time."
+    },
+    {
+      "id": "tc_047_standard",
+      "input": "What is the rate limit on the Growth plan?",
+      "expected_output": "100 requests per second per project.",
+      "config_a_output": "The Growth plan allows 100 requests per second per project.",
+      "config_b_output": "The rate limit is 1000 requests per second."
+    },
+    {
+      "id": "tc_048_standard",
+      "input": "How do I invite a team member?",
+      "expected_output": "Go to Settings > Team and click Invite.",
+      "config_a_output": "Go to Settings > Team and click Invite.",
+      "config_b_output": "You can invite team members by sending an email to support@zenith.com."
+    },
+    {
+      "id": "tc_049_standard",
+      "input": "What happens if my payment fails?",
+      "expected_output": "We retry the payment for 3 days before suspending the account.",
+      "config_a_output": "We retry the payment for 3 days before suspending the account.",
+      "config_b_output": "Your account is immediately deleted and all data is lost."
+    },
+    {
+      "id": "tc_050_standard",
+      "input": "Can I downgrade my plan?",
+      "expected_output": "Yes, you can downgrade at the end of your billing cycle.",
+      "config_a_output": "Yes, you can downgrade at the end of your billing cycle.",
+      "config_b_output": "No, downgrades are not permitted once you have upgraded."
+    },
+    {
+      "id": "tc_051_standard",
+      "input": "Is there a free trial for the Pro plan?",
+      "expected_output": "Yes, there is a 14-day free trial.",
+      "config_a_output": "Yes, there is a 14-day free trial.",
+      "config_b_output": "We offer a 30-day free trial for the Pro plan."
+    },
+    {
+      "id": "tc_052_standard",
+      "input": "What is the default port for the API?",
+      "expected_output": "The API uses standard HTTPS port 443.",
+      "config_a_output": "The API uses standard HTTPS port 443.",
+      "config_b_output": "The API runs on port 8080."
+    },
+    {
+      "id": "tc_053_standard",
+      "input": "Does the platform support webhooks?",
+      "expected_output": "Yes, webhooks are supported.",
+      "config_a_output": "No, we only support polling.",
+      "config_b_output": "Yes, webhooks are supported and can be configured in the dashboard."
+    },
+    {
+      "id": "tc_054_standard",
+      "input": "What format are the exports in?",
+      "expected_output": "Exports are available in CSV and JSON.",
+      "config_a_output": "Exports are available in CSV and JSON.",
+      "config_b_output": "Exports are only available in XML."
+    },
+    {
+      "id": "tc_055_standard",
+      "input": "How many projects can I have on the Free tier?",
+      "expected_output": "The Free tier allows up to 3 projects.",
+      "config_a_output": "The Free tier allows up to 3 projects.",
+      "config_b_output": "The Free tier allows unlimited projects."
+    },
+    {
+      "id": "tc_056_standard",
+      "input": "Is there a mobile app?",
+      "expected_output": "Yes, there is a mobile app.",
+      "config_a_output": "No, there is no mobile app.",
+      "config_b_output": "Yes, we have native iOS and Android apps."
+    },
+    {
+      "id": "tc_057_standard",
+      "input": "What is the uptime SLA?",
+      "expected_output": "The uptime SLA is 99.9%.",
+      "config_a_output": "The uptime SLA is 99.99%.",
+      "config_b_output": "The uptime SLA is 99.9%."
+    },
+    {
+      "id": "tc_058_standard",
+      "input": "Can I use my own domain?",
+      "expected_output": "Custom domains are not supported.",
+      "config_a_output": "Custom domains are not supported.",
+      "config_b_output": "Yes, custom domains are supported."
+    },
+    {
+      "id": "tc_059_standard",
+      "input": "What is the retention period for logs?",
+      "expected_output": "Logs are retained for 30 days.",
+      "config_a_output": "Logs are retained for 90 days.",
+      "config_b_output": "Logs are retained for 30 days."
+    },
+    {
+      "id": "tc_060_standard",
+      "input": "Does the platform have a dark mode?",
+      "expected_output": "Yes, dark mode is available.",
+      "config_a_output": "Yes, dark mode is available.",
+      "config_b_output": "No, dark mode is not available."
+    },
+    {
+      "id": "tc_061_genuine_tie",
+      "input": "What is the main benefit of Zenith?",
+      "expected_output": "Zenith provides real-time analytics for streaming data.",
+      "config_a_output": "Zenith provides real-time analytics for streaming data.",
+      "config_b_output": "The main benefit is real-time analytics on streaming data."
+    },
+    {
+      "id": "tc_062_genuine_tie",
+      "input": "How do I contact support?",
+      "expected_output": "Email support@zenith.com.",
+      "config_a_output": "You can email support@zenith.com.",
+      "config_b_output": "Contact us via email at support@zenith.com."
+    },
+    {
+      "id": "tc_063_genuine_tie",
+      "input": "What are the system requirements?",
+      "expected_output": "A modern web browser with JavaScript enabled.",
+      "config_a_output": "A modern web browser with JavaScript enabled.",
+      "config_b_output": "You just need a modern browser that supports JavaScript."
+    },
+    {
+      "id": "tc_064_genuine_tie",
+      "input": "Is the data encrypted?",
+      "expected_output": "Yes, all data is encrypted.",
+      "config_a_output": "Yes, all data is encrypted.",
+      "config_b_output": "Yes, we encrypt all data."
+    },
+    {
+      "id": "tc_065_genuine_tie",
+      "input": "How often are updates released?",
+      "expected_output": "Updates are released bi-weekly.",
+      "config_a_output": "Updates are released bi-weekly.",
+      "config_b_output": "We release updates every two weeks."
+    },
+    {
+      "id": "tc_066_genuine_tie",
+      "input": "Can I export my data?",
+      "expected_output": "Yes, in CSV or JSON format.",
+      "config_a_output": "Yes, in CSV or JSON format.",
+      "config_b_output": "Yes, as CSV or JSON."
+    },
+    {
+      "id": "tc_067_genuine_tie",
+      "input": "What is the latency of the API?",
+      "expected_output": "Average latency is 50ms.",
+      "config_a_output": "Average latency is 50ms.",
+      "config_b_output": "The average API latency is 50ms."
+    },
+    {
+      "id": "tc_068_genuine_tie",
+      "input": "Does it support SQL?",
+      "expected_output": "Yes, it supports a subset of SQL.",
+      "config_a_output": "Yes, it supports a subset of SQL.",
+      "config_b_output": "Yes, we support standard SQL querying."
+    },
+    {
+      "id": "tc_069_genuine_tie",
+      "input": "What is the maximum file size for uploads?",
+      "expected_output": "The maximum upload size is 100MB.",
+      "config_a_output": "The maximum upload size is 100MB.",
+      "config_b_output": "You can upload files up to 100MB."
+    },
+    {
+      "id": "tc_070_genuine_tie",
+      "input": "Is there a community forum?",
+      "expected_output": "Yes, at community.zenith.com.",
+      "config_a_output": "Yes, at community.zenith.com.",
+      "config_b_output": "Yes, you can find it at community.zenith.com."
+    },
+    {
+      "id": "tc_071_both_incorrect",
+      "input": "What is the price of the Pro tier?",
+      "expected_output": "The Pro tier costs $49/month.",
+      "config_a_output": "The Pro tier costs $39/month.",
+      "config_b_output": "The Pro tier costs $59/month."
+    },
+    {
+      "id": "tc_072_both_incorrect",
+      "input": "What is the storage limit on the Free tier?",
+      "expected_output": "The Free tier has a 1 GB limit.",
+      "config_a_output": "The Free tier has 5 GB.",
+      "config_b_output": "The Free tier has 10 GB."
+    },
+    {
+      "id": "tc_073_both_incorrect",
+      "input": "How long is the free trial?",
+      "expected_output": "The free trial lasts 14 days.",
+      "config_a_output": "The free trial lasts 7 days.",
+      "config_b_output": "The free trial lasts 30 days."
+    },
+    {
+      "id": "tc_074_both_incorrect",
+      "input": "What is the maximum number of API keys?",
+      "expected_output": "You can create 10 API keys.",
+      "config_a_output": "You can create 5 API keys.",
+      "config_b_output": "You can create 20 API keys."
+    },
+    {
+      "id": "tc_075_both_incorrect",
+      "input": "Does Zenith support Python 3.12?",
+      "expected_output": "Yes, support was added in v2.1.",
+      "config_a_output": "No, only Python 3.10 and below.",
+      "config_b_output": "Yes, but only on the Enterprise plan."
+    },
+    {
+      "id": "tc_076_both_incorrect",
+      "input": "What is the retention period for audit logs?",
+      "expected_output": "Audit logs are kept for 90 days.",
+      "config_a_output": "Audit logs are kept for 30 days.",
+      "config_b_output": "Audit logs are kept for 1 year."
+    },
+    {
+      "id": "tc_077_both_incorrect",
+      "input": "What is the default timezone?",
+      "expected_output": "The default timezone is UTC.",
+      "config_a_output": "The default timezone is EST.",
+      "config_b_output": "The default timezone is PST."
+    },
+    {
+      "id": "tc_078_both_incorrect",
+      "input": "How many environments are allowed?",
+      "expected_output": "You can have 3 environments.",
+      "config_a_output": "You can have 2 environments.",
+      "config_b_output": "You can have 5 environments."
+    },
+    {
+      "id": "tc_079_both_incorrect",
+      "input": "What is the maximum query timeout?",
+      "expected_output": "The timeout is 5 minutes.",
+      "config_a_output": "The timeout is 1 minute.",
+      "config_b_output": "The timeout is 10 minutes."
+    },
+    {
+      "id": "tc_080_both_incorrect",
+      "input": "Does the platform support IPv6?",
+      "expected_output": "No, IPv6 is not supported.",
+      "config_a_output": "Yes, IPv6 is supported on all tiers.",
+      "config_b_output": "Yes, but only for Enterprise customers."
+    },
+    {
+      "id": "tc_081_order_sensitive",
+      "input": "What are the supported export formats?",
+      "expected_output": "CSV and JSON.",
+      "config_a_output": "CSV and JSON.",
+      "config_b_output": "We support CSV, JSON, and XML formats."
+    },
+    {
+      "id": "tc_082_order_sensitive",
+      "input": "What is the uptime SLA?",
+      "expected_output": "99.9% uptime.",
+      "config_a_output": "99.9%.",
+      "config_b_output": "99.99%."
+    },
+    {
+      "id": "tc_083_order_sensitive",
+      "input": "How long are backups retained?",
+      "expected_output": "Backups are retained for 7 days.",
+      "config_a_output": "Backups are retained for 7 days.",
+      "config_b_output": "Backups are retained for 7 days, and can be extended to 30 days on Enterprise."
+    },
+    {
+      "id": "tc_084_order_sensitive",
+      "input": "What is the rate limit?",
+      "expected_output": "100 requests per second.",
+      "config_a_output": "100 requests per second.",
+      "config_b_output": "100 requests per second per project."
+    },
+    {
+      "id": "tc_085_order_sensitive",
+      "input": "Does it support SSO?",
+      "expected_output": "Yes, on Enterprise.",
+      "config_a_output": "Yes, on Enterprise.",
+      "config_b_output": "Yes, SSO is available on Enterprise, Pro, and Free tiers."
+    },
+    {
+      "id": "tc_086_order_sensitive",
+      "input": "What is the maximum file size?",
+      "expected_output": "100 MB.",
+      "config_a_output": "100 MB.",
+      "config_b_output": "100 MB for Free, 1 GB for Pro."
+    },
+    {
+      "id": "tc_087_order_sensitive",
+      "input": "How do I cancel?",
+      "expected_output": "Go to Billing and click Cancel.",
+      "config_a_output": "Go to Billing and click Cancel.",
+      "config_b_output": "You can cancel by going to Billing > Subscription and clicking the Cancel button."
+    },
+    {
+      "id": "tc_088_order_sensitive",
+      "input": "What encryption is used?",
+      "expected_output": "AES-256 at rest, TLS 1.2+ in transit.",
+      "config_a_output": "AES-256 at rest, TLS 1.2+ in transit.",
+      "config_b_output": "AES-256 at rest."
+    },
+    {
+      "id": "tc_089_order_sensitive",
+      "input": "What is the price?",
+      "expected_output": "$49/month.",
+      "config_a_output": "$49/month.",
+      "config_b_output": "$49/month, billed annually."
+    },
+    {
+      "id": "tc_090_order_sensitive",
+      "input": "Is there a free tier?",
+      "expected_output": "Yes, with 1GB storage.",
+      "config_a_output": "Yes, with 1GB storage.",
+      "config_b_output": "Yes, we offer a free tier."
+    },
+    {
+      "id": "tc_091_ambiguous_incomplete",
+      "input": "What are the system requirements?",
+      "expected_output": "Modern browser, 8GB RAM, and a stable internet connection.",
+      "config_a_output": "Modern browser, 8GB RAM, and a stable internet connection.",
+      "config_b_output": "A modern web browser."
+    },
+    {
+      "id": "tc_092_ambiguous_incomplete",
+      "input": "How do I configure webhooks?",
+      "expected_output": "Go to Settings > Integrations > Webhooks, enter your URL, and select events.",
+      "config_a_output": "Go to Settings > Integrations > Webhooks, enter your URL, and select events.",
+      "config_b_output": "You can configure webhooks in the Settings menu."
+    },
+    {
+      "id": "tc_093_ambiguous_incomplete",
+      "input": "What is the refund policy?",
+      "expected_output": "30-day money-back guarantee for annual plans.",
+      "config_a_output": "30-day money-back guarantee for annual plans.",
+      "config_b_output": "We offer a money-back guarantee."
+    },
+    {
+      "id": "tc_094_ambiguous_incomplete",
+      "input": "How many API keys can I have?",
+      "expected_output": "Up to 10 keys per project.",
+      "config_a_output": "Up to 10 keys per project.",
+      "config_b_output": "You can have multiple API keys."
+    },
+    {
+      "id": "tc_095_ambiguous_incomplete",
+      "input": "What are the supported databases?",
+      "expected_output": "Postgres, MySQL, and SQL Server.",
+      "config_a_output": "Postgres, MySQL, and SQL Server.",
+      "config_b_output": "Postgres and MySQL."
+    },
+    {
+      "id": "tc_096_ambiguous_incomplete",
+      "input": "What is the data retention policy?",
+      "expected_output": "Raw data for 30 days, aggregates indefinitely.",
+      "config_a_output": "Raw data for 30 days, aggregates indefinitely.",
+      "config_b_output": "We keep your data forever."
+    },
+    {
+      "id": "tc_097_ambiguous_incomplete",
+      "input": "How do I set up SSO?",
+      "expected_output": "Contact support to enable SSO and provide your SAML metadata.",
+      "config_a_output": "Contact support to enable SSO and provide your SAML metadata.",
+      "config_b_output": "Go to the SSO settings page."
+    },
+    {
+      "id": "tc_098_ambiguous_incomplete",
+      "input": "What are the limits on the Free plan?",
+      "expected_output": "1 project, 3 users, and 1GB storage.",
+      "config_a_output": "1 project, 3 users, and 1GB storage.",
+      "config_b_output": "Limited storage and users."
+    },
+    {
+      "id": "tc_099_ambiguous_incomplete",
+      "input": "How do I export a dashboard?",
+      "expected_output": "Click the Export button and choose PDF or PNG.",
+      "config_a_output": "Click the Export button and choose PDF or PNG.",
+      "config_b_output": "You can export it from the menu."
+    },
+    {
+      "id": "tc_100_ambiguous_incomplete",
+      "input": "What is the SLA for P1 incidents?",
+      "expected_output": "1-hour response, 4-hour resolution.",
+      "config_a_output": "1-hour response, 4-hour resolution.",
+      "config_b_output": "1-hour response."
+    }
+  ]
+}
